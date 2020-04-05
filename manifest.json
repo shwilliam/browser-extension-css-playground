@@ -4,18 +4,18 @@
   "version": "1.0",
   "description": "CSS playground in your browser",
   "icons": {
-    "48": "icons/off.svg"
+    "48": "icons/code.svg"
   },
   "page_action": {
-    "default_icon": "icons/off.svg",
+    "default_icon": "icons/code.svg",
     "browser_style": true
   },
   "permissions": ["activeTab", "tabs"],
   "browser_action": {
     "browser_style": true,
     "default_icon": {
-      "16": "icons/off.svg",
-      "32": "icons/off.svg"
+      "16": "icons/code.svg",
+      "32": "icons/code.svg"
     },
     "default_title": "CSS Playground",
     "default_popup": "popup/editor.html"
