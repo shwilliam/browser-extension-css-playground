@@ -7,10 +7,16 @@
     content="width=device-width, initial-scale=1.0"
   >
   <title>CSS Playground Editor</title>
+  <link rel="stylesheet" href="./editor.css">
 </head>
 <body>
-  <textarea id="__css_playground_editor_input__" cols="50" rows="10"></textarea>
-  <button type="button" id="__css_playground_editor_toggle__">Hide custom styles</button>
+  <textarea id="__css_playground_editor_input__" cols="50" rows="10" placeholder="a {
+  color: rebeccapurple;
+}"></textarea>
+  <div class="button__container">
+    <button type="button" id="__css_playground_editor_toggle__" class="button">Hide custom styles</button>
+    <button type="button" id="__css_playground_editor_clear__" class="button">Clear CSS</button>
+  </div>
 
   <script src="./editor.js"></script>
 </body>

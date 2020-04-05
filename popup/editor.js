@@ -1,5 +1,6 @@
 let cachedStylesheet
 const inputEl = document.getElementById('__css_playground_editor_input__')
+const clearEl = document.getElementById('__css_playground_editor_clear__')
 const toggleEl = document.getElementById('__css_playground_editor_toggle__')
 const toggleLabelOn = 'Hide custom styles'
 const toggleLabelOff = 'Preview custom styles'
@@ -12,6 +13,10 @@ inputEl.addEventListener('keydown', e => {
     browser.tabs.insertCSS({code: styles})
     cachedStylesheet = styles
   }
+})
+
+clearEl.addEventListener('click', () => {
+  inputEl.value = ''
 })
 
 toggleEl.addEventListener('click', () => {
